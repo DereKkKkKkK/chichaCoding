@@ -1,0 +1,24 @@
+.header {
+  background-color: black;
+}
+
+@font-face {
+  font-family: "FuturaMedium";
+  src: url('../assets/fonts/FuturaNewMedium-Obl.woff');
+  format('woff') font-style: normal;
+  font-weight: normal;
+}
+
+.div {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 25px;
+  width: 1500px;
+}
+
+.parent-container {
+  display: block;
+  flex-direction: ;
+}
