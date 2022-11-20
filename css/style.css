@@ -1,24 +1,414 @@
-.header {
-  background-color: black;
+@font-face {
+  position: relative;
+  font-family: "FuturaNew";
+  src: url('../assets/fonts/FuturaNew.woff') format('woff');
+  font-style: normal;
+  font-weight: 450;
+  z-index: 100;
 }
 
 @font-face {
-  font-family: "FuturaMedium";
-  src: url('../assets/fonts/FuturaNewMedium-Obl.woff');
-  format('woff') font-style: normal;
-  font-weight: normal;
+  position: relative;
+  font-family: "GaramondPremierPro";
+  src: url('../assets/fonts/GaramondPremierPro.woff') format('woff');
+  font-style: normal;
+  font-weight: 450;
+  z-index: 100;
 }
 
-.div {
-  display: inline-block;
-  justify-content: center;
+@font-face {
+  position: relative;
+  font-family: "BazhanovC";
+  src: url('../assets/fonts/BazhanovC.woff') format('woff');
+  font-style: normal;
+  font-weight: 450;
+  z-index: 100;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  z-index: 100;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hr-line {
+  display: flex;
+  width: 84px;
+  border-width: 1px;
+  margin-top: -20px;
+}
+
+.header {
+  position: relative;
+  background-color: black;
+  font-family: "FuturaNew";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 12px;
+  padding: 16px 17%;
+}
+
+.header-buttons__left {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
-  padding: 25px;
-  width: 1500px;
+  margin-right: 15px;
 }
 
-.parent-container {
+.header__logo {
+  display: flex;
+  margin-left: -40px;
+  position: relative;
+  width: 130px;
+  height: 44px;
+}
+
+.footer {
+  background-image: url('../assets/img/slider2.png');
+  font-family: "FuturaNew";
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 976.5px;
+  margin-top: -560px;
+  background-position: center;
+  margin-left: -250px;
+  z-index: 1;
+}
+
+.footer__number {
+  font-family: "BazhanovC";
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0;
+  color: #F1DC9A;
+}
+
+.footer__objects {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 480px;
+  padding-top: 440px;
+  color: white;
+  padding-top: -100px;
+}
+
+.footer__object {
+  margin-top: -100px;
+  padding: 0 36px;
+}
+
+.footer__h {
+  position: relative;
+  color: #F1DC9A;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 19px;
+  margin-top: -12px;
+}
+
+.footer__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 17px;
+  color: #B3B3B3;
+}
+
+.hr-footer {
+  position: relative;
+  border-color: #F1DC9A;
+  margin-top: -15px;
+}
+
+.main__menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.menu__item {
+  display: flex;
+  padding: 0px 22px;
+  line-height: 14px;
+  letter-spacing: 1.7px;
+}
+
+
+.h1 {
+  font-family: "FuturaNew";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 6px;
+}
+
+.h2 {
+  font-family: "FuturaNew";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.h3 {
+  font-family: "FuturaNew";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.title {
+  background-image: url('../assets/img/background-title.png');
+  position: relative;
+  background-size: cover;
+  height: 800px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 0px;
+  z-index: 3;
+}
+
+.title2 {
+  background-image: url('../assets/img/slider.png');
+  display: flex;
+  position: relative;
+  background-size: cover;
+  height: 976.5px;
+  overflow: hidden;
+  margin-top: -100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.ring {
+  background: #F1DC9A;
+  color: black;
+  padding: 7px 29px;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 1.4px;
+}
+
+.telephone {
+  font-family: "GaramondPremierPro";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 24px;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.piano {
+  padding-top: 38px;
   display: block;
-  flex-direction: ;
+  margin: auto;
+}
+
+.piano2 {
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1345px;
+  height: 1245px;
+  margin-right: -300px;
+}
+
+.perenos {
+  position: relative;
+  border-bottom: 1px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.questions {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  margin-top: -300px;
+  z-index: 1;
+}
+
+.questions__logo {
+  padding: 94px 94px;
+  width: 294px;
+  height: 98px;
+  display: flex;
+  position: relative;
+  z-index: 7;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 340px;
+}
+
+.questions__text {
+  padding-left: 230px;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.questions__object1 {
+  font-family: "GaramondPremierPro";
+  font-size: 44px;
+  height: 0px;
+  font-weight: 400;
+}
+
+.questions__object2 {
+  height: 10px;
+  letter-spacing: 2px;
+}
+
+.questions__object3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -1px;
+}
+
+.questions__input {
+  display: block;
+  padding: 10px 11px;
+  width: 100%;
+  size: 44;
+  line-height: 10px;
+}
+
+.questions__notice {
+  display: flex;
+  position: relative;
+  margin-left: -288px;
+  color: #7E7352;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.questions__textarea {
+  margin-bottom: -15px;
+}
+
+.questions__input::placeholder {
+  color: gray;
+}
+
+.question__legend {
+  font-size: 20px;
+}
+
+.questions__button {
+  background-color: #F1DC9A;
+  letter-spacing: 1.5px;
+  padding: 16px 42px;
+  font-weight: 600;
+  border: 0;
+  margin-top: 10px;
+}
+
+.custom {
+  font-family: "GaramondPremierPro";
+  display: flex;
+  justify-content: center;
+  letter-spacing: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 53px;
+}
+
+.custom2 {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.custom3 {
+  margin-top: 329px;
+  margin-left: -379px;
+  display: flex;
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.custom4 {
+  font-family: "GaramondPremierPro";
+  display: flex;
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  flex-direction: column;
+  color: white;
+  margin-top: 220px;
+  padding-left: 510px;
+  letter-spacing: 6px;
+}
+
+.custom5 {
+  padding-left: 510px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  margin-top: 280px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.flag {
+  width: 120px;
+  margin-left: 9px;
+}
+
+.shopping {
+  padding: 10px 10px;
+  vertical-align: middle;
+}
+
+.profile {
+  padding: 10px 10px;
+  vertical-align: middle;
 }
