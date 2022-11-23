@@ -1,162 +1,232 @@
 @font-face {
-    font-family: "FuturaNewLight";
-    src: url('../assets/fonts/FuturaNewLight.woff') format('woff');
-    font-style: normal;
-    font-weight: 450;
-    z-index: 100;
-  }
-  
-  @font-face {
-    font-family: "FuturaNewBook";
-    src: url('../assets/fonts/FuturaNewBook.woff') format('woff');
-    font-weight: 450;
-    z-index: 100;
-  }
+  font-family: "FuturaNewLight";
+  src: url('../assets/fonts/FuturaNewLight.woff') format('woff');
+  font-style: normal;
+  font-weight: 450;
+  z-index: 100;
+}
 
-  @font-face {
-    font-family: "GaramondPremierPro";
-    src: url('../assets/fonts/GaramondPremierPro.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-    z-index: 100;
-  }
-  
-  @font-face {
-    font-family: "BazhanovC";
-    src: url('../assets/fonts/BazhanovC.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-    z-index: 100;
-  }
+@font-face {
+  font-family: "FuturaNewBook";
+  src: url('../assets/fonts/FuturaNewBook.woff') format('woff');
+  font-weight: 450;
+  z-index: 100;
+}
 
-  body {
-    padding: 0;
-    margin: 0;
-  }
+@font-face {
+  font-family: "GaramondPremierPro";
+  src: url('../assets/fonts/GaramondPremierPro.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  z-index: 100;
+}
 
-  button {
-    padding: 7px 29px;
-  }
+@font-face {
+  font-family: "BazhanovC";
+  src: url('../assets/fonts/BazhanovC.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  z-index: 100;
+}
 
-  button:hover {
-    background: gray;
-  }
+body {
+  padding: 0;
+  margin: 0;
+}
 
-  a:hover {
-    color: gray;
-  }
+button {
+  padding: 7px 29px;
+}
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+button:hover {
+  background: gray;
+}
 
-  p {
-    padding: 0;
-    margin: 0;
-  }
+a:hover {
+  color: gray;
+}
 
-  li {
-    list-style-type: none;
-  }
+a {
+  text-decoration: none;
+  color: white;
+}
 
-  .h1 {
-    font-family: "GaramondPremierPro";
-    font-size: 50px;
-    line-height: 53px;
-  }
+p {
+  padding: 0;
+  margin: 0;
+}
 
-  .h2 {
-    font-family: "FuturaNew", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 2px;
-  }
+li {
+  list-style-type: none;
+}
 
-  .h3 {
-    font-family: "FuturaNew";
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 2px; 
-  }
+.h1 {
+  font-family: "GaramondPremierPro";
+  font-size: 50px;
+  line-height: 53px;
+  letter-spacing: 6px;
+  color: white;
+}
 
-  .h4 {
-    font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 450;
-    size: 12px;
-    line-height: 14.4px;
-    letter-spacing: 1.7px;
-  }
+.h2 {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
 
-  .header {
-    background-color: black;
-    padding: 0;
-  }
+.h3 {
+  font-family: "FuturaNewLight";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: white;
+}
 
-  .header-buttons {
-    display: flex;
-    justify-content: space-between;
-    padding: 13px 45px;
-    padding-bottom: 13px;
-  }
+.h4 {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 0.75rem;
+  line-height: 18px;
+  letter-spacing: 1.7px;
+}
 
-  .header-ring {
-    display: flex;
-    align-items: center;
-  }
+.header {
+  background-color: black;
+  padding: 0;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 45px;
+  padding-bottom: 13px;
+}
 
-  .main__menu {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    padding-top: 16px;
-    margin-left: 35px;
-    margin-right: 35px;
-  }
+.header-ring {
+  display: flex;
+  align-items: center;
+}
 
-  .menu__item {
-    text-align: center;
-  }
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  .telephone {
-    margin-right: 15px;
-    font-size: 25px;
-  }
+.main__menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
 
-  .ring {
-    margin-right: 10px;
-    border: 0;
-    border-radius: 0;
-    background: #F1DC9A;
-    letter-spacing: 1.4px;
-  }
+.menu__item {
+  text-align: center;
+}
 
-  .shopping {
-    margin-right: 10px;
-  }
+.telephone {
+  margin-right: 15px;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+}
 
-  .flags {
-    display: flex;
-    flex-wrap: wrap;
-    width: 120px;
-    margin: 0;
-    padding: 0;
-  }
+.ring {
+  margin-right: 10px;
+  border: 0;
+  border-radius: 0;
+  background: #F1DC9A;
+  letter-spacing: 1.4px;
+}
 
-  .flag {
-    border: 0;
-    width: 50px;
-    height: 28px;
-    padding: 0;
-    margin-right: 10px;
-    margin-bottom: 2px;
-  }
+.shopping {
+  margin-right: 10px;
+}
+
+.flags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+.flag {
+  border: 0;
+  width: 50px;
+  height: 28px;
+  padding: 0;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.title-black {
+  background-image: url("/assets/img/background-title.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.title-black__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 117px;
+}
+
+.title-black__span {
+  font-weight: 600;
+}
+
+.title-black__hr {
+  background-color: #F1DC9A;
+  width: 84px;
+  height: 1px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+.title-black__piano {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.title-white {
+  background-image: url("/assets/img/slider.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -109.5px;
+  height: 976.5px;
+}
+
+.title-white__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 109.5px;
+  padding-left: 94px;
+  max-width: 1200px;
+}
+
+.title-white__logo {
+  position: relative;
+  width: 294px;
+  padding-bottom: 37.7px;
+  padding-top: 63.6px;
+}
