@@ -3,6 +3,7 @@
   src: url('../assets/fonts/FuturaNewLight.woff') format('woff');
   font-style: normal;
   font-weight: 450;
+  position: relative;
   z-index: 100;
 }
 
@@ -10,6 +11,7 @@
   font-family: "FuturaNewBook";
   src: url('../assets/fonts/FuturaNewBook.woff') format('woff');
   font-weight: 450;
+  position: relative;
   z-index: 100;
 }
 
@@ -18,6 +20,7 @@
   src: url('../assets/fonts/GaramondPremierPro.woff') format('woff');
   font-style: normal;
   font-weight: 400;
+  position: relative;
   z-index: 100;
 }
 
@@ -26,12 +29,24 @@
   src: url('../assets/fonts/BazhanovC.woff') format('woff');
   font-style: normal;
   font-weight: 400;
+  position: relative;
   z-index: 100;
+}
+
+html {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   padding: 0;
   margin: 0;
+}
+
+section {
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -40,6 +55,11 @@ button {
 
 button:hover {
   background: gray;
+}
+
+div {
+  padding: 0;
+  margin: 0;
 }
 
 a:hover {
@@ -58,11 +78,13 @@ p {
 
 li {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .h1 {
   font-family: "GaramondPremierPro";
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 53px;
   letter-spacing: 6px;
   color: white;
@@ -71,15 +93,15 @@ li {
 .h2 {
   font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 30px;
   letter-spacing: 2px;
 }
 
 .h3 {
-  font-family: "FuturaNewLight";
+  font-family: "FuturaNewLight", Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   letter-spacing: 2px;
   color: white;
@@ -133,7 +155,7 @@ li {
 
 .telephone {
   margin-right: 15px;
-  font-size: 25px;
+  font-size: 1.5625rem;
   letter-spacing: 0.02em;
 }
 
@@ -171,10 +193,11 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
-  display: flex;
   position: relative;
+  display: flex;
   justify-content: flex-start;
   text-align: center;
+  z-index: 5;
 }
 
 .title-black__container {
@@ -189,9 +212,8 @@ li {
 }
 
 .title-black__hr {
-  background-color: #F1DC9A;
+  border-color: #F1DC9A;
   width: 84px;
-  height: 1px;
   margin-top: 14px;
   margin-bottom: 20px;
 }
@@ -207,10 +229,13 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: flex-start;
-  margin-top: -109.5px;
+  margin-top: -119.5px;
   height: 976.5px;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .title-white__container {
@@ -220,13 +245,203 @@ li {
   width: 100%;
   margin: 0 auto;
   margin-top: 109.5px;
-  padding-left: 94px;
   max-width: 1200px;
 }
 
 .title-white__logo {
+  display: flex;
   position: relative;
   width: 294px;
+  margin-left: 94px;
   padding-bottom: 37.7px;
   padding-top: 63.6px;
+}
+
+.title-white__text {
+  display: flex;
+  position: relative;
+  margin-left: 94px;
+}
+
+.questions {
+  position: relative;
+  z-index: 1;
+}
+
+.questions__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.questions__h1 {
+  color: black;
+  font-size: 2.75rem;
+  letter-spacing: 2.6px;
+}
+
+.questions__h2 {
+  font-family: "FuturaNewLight", Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.questions__h3 {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  color: black;
+  letter-spacing: 0;
+  font-size: 1.375rem;
+  padding-top: 18px;
+}
+
+.questions__text {
+  position: relative;
+  margin-left: 35px;
+  margin-top: -188.5px;
+  text-align: center;
+  order: 1;
+}
+
+.questions__image {
+  position: relative;
+  margin-right: -762px;
+  margin-top: -308.5px;
+  pointer-events: none;
+  order: 2;
+  z-index: 3;
+}
+
+.questions__legend {
+  font-family: "FuturaNewLight", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  padding-top: 10px;
+  color: black;
+}
+
+.questions__textarea {
+  padding-left: 17px;
+}
+
+.questions__input {
+  display: flex;
+  font-size: 1.25rem;
+  padding: 11px 10px;
+  letter-spacing: 0;
+  color: black;
+  width: 490px;
+  height: 18px;
+}
+
+.questions__input::placeholder {
+  color: rgba(83, 83, 83, 0.7)
+}
+
+.questions__notice {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #7E7352;
+  letter-spacing: 0;
+  padding-top: 10px;
+  font-weight: 400;
+  float: left;
+}
+
+.questions__button {
+  background: #F1DC9A;
+  color: black;
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  padding: 16px 75px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+  border: 0;
+}
+
+.offers {
+  background-image: url("/assets/img/slider2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 976.5px;
+  margin-top: -648.5px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 6;
+}
+
+.offers__container {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 220px;
+}
+
+.offers__h1 {
+  font-family: "GaramondPremierPro", Arial, Helvetica, sans-serif;
+  font-size: 2.75rem;
+  letter-spacing: 6px;
+  color: white;
+  line-height: 36.2px;
+  pointer-events: none;
+}
+
+.offers__h2 {
+  font-family: "FuturaNewLight", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: white;
+  line-height: 24px;
+  pointer-events: none;
+}
+
+.offers__h3 {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  color: #F1DC9A;
+  font-size: 1.375rem;
+  line-height: 19px;
+}
+
+.offers__hr {
+  border-color: #F1DC9A;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.offers__objects {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.offers__number {
+  font-family: "BazhanovC", Arial, Helvetica, sans-serif;
+  color: #F1DC9A;
+  font-size: 1.875rem;
+}
+
+.offers__text {
+  font-family: "FuturaNewLight", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  color: #B3B3B3;
+  line-height: 15px;
+}
+
+.offers__span {
+  color: #F1DC9A;
+}
+
+.offers__all {
+  margin-left: 35px;
+  margin-right: 35px;
 }
