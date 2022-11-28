@@ -33,6 +33,15 @@
   z-index: 100;
 }
 
+@font-face {
+  font-family: "RobotoBold";
+  src: url('../assets/fonts/RobotoBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  z-index: 100;
+}
+
 html {
   overflow-x: hidden;
   padding: 0;
@@ -72,6 +81,11 @@ a {
 }
 
 p {
+  padding: 0;
+  margin: 0;
+}
+
+br {
   padding: 0;
   margin: 0;
 }
@@ -441,7 +455,101 @@ li {
   color: #F1DC9A;
 }
 
-.offers__all {
+.offers__content {
   margin-left: 35px;
   margin-right: 35px;
+}
+
+.footer {
+  background-image: url("/assets/img/footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer__container {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-top: 31px;
+  padding-bottom: 56px;
+  float: right;
+  overflow: hidden;
+}
+
+.footer__h1 {
+  font-family: "GaramondPremierPro", Arial, Helvetica, sans-serif;
+  font-size: 2.75rem;
+  letter-spacing: 6px;
+}
+
+.footer__h2 {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: 0;
+}
+
+.footer__hr {
+  width: 60px;
+  border-color: #F1DC9A;
+  margin: 0;
+}
+
+.footer__hr-longer {
+  border-color: #F1DC9A;
+}
+
+.footer__info {
+  font-family: "FuturaNewLight", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+
+  letter-spacing: -0.4px;
+
+}
+
+.footer__tel {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  line-height: 22px;
+}
+
+.footer__button {
+  font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
+  letter-spacing: 2.7px;
+  background-color: #F1DC9A;
+  border: 0;
+  padding: 15px 80px;
+}
+
+.footer__dot {
+  background-color: #F1DC9A;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-top: 11px;
+}
+
+.footer__span {
+  color: #F1DC9A;
+}
+
+.footer__end {
+  font-family: "RobotoBold", Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
