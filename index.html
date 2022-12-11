@@ -17,9 +17,65 @@
 
 <body>
     <header class="header">
+        <div class="header__tablet">
+            <div class="header__tablet-container">
+                <div class="header__tablet-menu">
+                    <a href="#" class="header__tablet-logo">
+                        <img src="assets/img/pianos_logo.svg" alt="company logo" width="130px" height="44px">
+                    </a>
+                    <div class="header__tablet-ring">
+                        <a href="" class="link telephone" position="right"> +7 708 107 85 07 </a>
+                        <a href="" class="link"> <button type="text" class="ring h4"> ЗАКАЗАТЬ ЗВОНОК </button> </a>
+                        <a href="" class="link shopping"> <input type="image" src="assets/img/shopping cart 1.svg"
+                                alt="shopping card"> </a>
+                        <a href="" class="link profile"> <input type="image" src="assets/img/profile icon 1.svg"
+                                alt="profile card"> </a>
+                        <div class="menu__content">
+                            <input class="tablet__menu" type="image" src="assets/img/Menu.png" alt="tablet menu">
+                            <div class="menu__list">
+                                <ul>
+                                    <li>
+                                        <a class="h4" href="">ОНЛАЙН-МАГАЗИН ПИАНИНО И РОЯЛЕЙ</a>
+                                    </li>
+                                    <li>
+                                        <a class="h4" href="">НАСТРОЙКА ПИАНИНО И РОЯЛЕЙ</a>
+                                    </li>
+                                    <li>
+                                        <a class="h4" href="">АРЕНДА ПИАНИНО И РОЯЛЕЙ</a>
+                                    </li>
+                                    <li>
+                                        <a class="h4" href="">ДОПОЛНИТЕЛЬНЫЕ СИСТЕМЫ</a>
+                                    </li>
+                                    <li>
+                                        <a class="h4" href="">НОВОСТНОЙ БЛОГ</a>
+                                    </li>
+                                    <li>
+                                        <a class="h4" href="">О КОМПАНИИ</a>
+                                    </li>
+                                    <li>
+                                        <a class="h4" href="">КОНТАКТЫ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__tablet-flags">
+                    <button type="text" class="tablet-flag"> РУССКИЙ <img class="tablet-flag__img"
+                            src="assets/img/Russia Flag.png" width="23px" height="12px"> </button>
+                    <button type="text" class="tablet-flag"> ENGLISH <img class="tablet-flag__img"
+                            src="assets/img/USA Flag.png" width="23px" height="12px"> </button>
+                    <button type="text" class="tablet-flag"> O'ZBEK <img class="tablet-flag__img"
+                            src="assets/img/Izrael Flag.png" width="23px" height="12px"> </button>
+                    <button type="text" class="tablet-flag"> AZƏRBAYCAN <img class="tablet-flag__img"
+                            src="assets/img/Kazah Flag.png" width="23px" height="12px"> </button>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <ul class="main__menu">
-                <a href="#" class="header__logo menu__item">
+                <a href="#" class="header__logo">
                     <img src="assets/img/pianos_logo.svg" alt="company logo" width="130px" height="44px">
                 </a>
                 <li class="menu__item h4">
@@ -57,17 +113,18 @@
                         <button href="" class="izrael__flag flag"> <img src="assets/img/Izrael Flag.png"
                                 alt="izrael flag"> </button>
                     </div>
-                    <div class="header-ring">
-                        <a href="" class="link telephone h1" position="right"> +7 708 107 85 07 </a>
-                        <a href="" class="link"> <button type="text" class="ring h4"> ЗАКАЗАТЬ ЗВОНОК </button> </a>
-                        <a href="" class="link shopping"> <input type="image" src="assets/img/shopping cart 1.svg"
-                                alt="shopping card"> </a>
-                        <a href="" class="link profile"> <input type="image" src="assets/img/profile icon 1.svg"
-                                alt="profile card"> </a>
+                    <div>
+                        <div class="header-ring">
+                            <a href="" class="link telephone" position="right"> +7 708 107 85 07 </a>
+                            <a href="" class="link"> <button type="text" class="ring h4"> ЗАКАЗАТЬ ЗВОНОК </button> </a>
+                            <a href="" class="link shopping"> <input type="image" src="assets/img/shopping cart 1.svg"
+                                    alt="shopping card"> </a>
+                            <a href="" class="link profile"> <input type="image" src="assets/img/profile icon 1.svg"
+                                    alt="profile card"> </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </p>
+                </p>
     </header>
     </div>
 
@@ -103,28 +160,31 @@
                     МЫ С УДОВОЛЬСТВЕМ НА НИХ ОТВЕТИМ!
                 </p>
                 <p class="questions__h3 h3">
-                    Вы можете оставить свои данные и менеджер <br> Вам перезвонит. Не беспокойтесь, мы никуда <br> не
+                    Вы можете оставить свои данные и менеджер <br class="tablet-br"> Вам перезвонит. Не беспокойтесь, мы
+                    никуда <br class="tablet-br"> не
                     передаем Ваши данные.
                 </p>
-                <p class="questions__textarea h3">
-                    <legend class="questions__legend"><b>Телефон*</b></legend>
-                    <input class="questions__input h3" placeholder="+7 (***) *** ** **" type="tel" id="telephone">
-                </p>
-                <p class="questions__textarea h3">
-                    <legend class="questions__legend">Имя</legend>
-                    <input class="questions__input h3" placeholder="Иван" type="text" id="name">
-                </p>
-                <p class="questions__textarea h3">
-                    <legend class="questions__legend">Электронная почта</legend>
-                    <input class="questions__input h3" placeholder="123@gmail.com" type="email" id="mail">
-                </p>
-                <p class="questions__textarea h3">
-                    <legend class="questions__legend">Когда Вам будет удобно, чтобы мы перезвонили?</legend>
-                    <input class="questions__input h3" placeholder="вечером, после 7" type="text" id="time">
-                </p>
-                <p class="questions__notice h3">
-                    *поле обязательно для заполнения
-                </p>
+                <div class="questions__textareas">
+                    <p class="questions__textarea h3">
+                        <legend class="questions__legend"><b>Телефон*</b></legend>
+                        <input class="questions__input h3" placeholder="+7 (***) *** ** **" type="tel" id="telephone">
+                    </p>
+                    <p class="questions__textarea h3">
+                        <legend class="questions__legend">Имя</legend>
+                        <input class="questions__input h3" placeholder="Иван" type="text" id="name">
+                    </p>
+                    <p class="questions__textarea h3">
+                        <legend class="questions__legend">Электронная почта</legend>
+                        <input class="questions__input h3" placeholder="123@gmail.com" type="email" id="mail">
+                    </p>
+                    <p class="questions__textarea h3">
+                        <legend class="questions__legend">Когда Вам будет удобно, чтобы мы перезвонили?</legend>
+                        <input class="questions__input h3" placeholder="вечером, после 7" type="text" id="time">
+                    </p>
+                    <p class="questions__notice h3">
+                        *поле обязательно для заполнения
+                    </p>
+                </div>
                 <p>
                     <button type="submit" class="questions__button h3"><span class="questions__button-text">ПОЛУЧИТЬ
                             КОНСУЛЬТАЦИЮ</span></button>
