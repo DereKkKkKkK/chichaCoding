@@ -180,6 +180,10 @@ li {
   margin-left: 10px;
 }
 
+.tablet-br__shown {
+  display: none;
+}
+
 .header {
   background-color: black;
   padding: 0;
@@ -213,13 +217,9 @@ li {
   margin-right: 35px;
 }
 
-.tablet__menu:hover {
-  filter: brightness(0.6);
-}
-
 .menu__list {
   display: none;
-  background-color: #F1DC9A;
+  background-color: gray;
   border-radius: 10px;
   z-index: 6;
 }
@@ -227,10 +227,8 @@ li {
 .menu__list a {
   position: relative;
   display: flex;
-  align-items: space-between;
   width: 180px;
   margin: 0 auto;
-  color: black;
   padding: 5px 0;
   padding-right: 15px;
 }
@@ -249,6 +247,7 @@ li {
   justify-content: center;
   position: absolute;
   margin-left: -85px;
+  margin-top: -10px;
 }
 
 .menu__item {
@@ -427,6 +426,10 @@ li {
   z-index: 3;
 }
 
+.questions__image-tablet {
+  display: none;
+}
+
 .questions__legend {
   font-family: "FuturaNewLight", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -457,9 +460,11 @@ li {
 .questions__notice {
   font-family: "FuturaNewBook", Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  display: flex;
   color: #7E7352;
   letter-spacing: 0;
   padding-top: 10px;
+  padding-left: 17px;
   font-weight: 400;
   float: left;
 }
@@ -694,6 +699,10 @@ li {
     padding-top: 30px;
   }
 
+  .questions__textarea {
+    padding-left: 0;
+  }
+
   .questions__button {
     display: flex;
     margin: 0 auto;
@@ -709,5 +718,88 @@ li {
 
   .tablet__menu {
     background: black;
+  }
+
+  .title-white {
+    background-image: url('/assets/img/slider-tablet.png');
+  }
+
+  .title-white__logo {
+    padding-top: 84px;
+    padding-bottom: 18px;
+  }
+
+  .questions__container {
+    max-width: 768px;
+    padding-left: 25px;
+  }
+
+  .questions__h1 {
+    font-size: 2.25rem;
+  }
+
+  .questions__h2 {
+    font-size: 1.25rem;
+  }
+
+  .questions__h3 {
+    font-size: 1.125rem;
+  }
+
+  .questions__input {
+    padding: 8px 10px;
+    width: 440px;
+    height: 18px;
+  }
+
+  .questions__legend {
+    font-size: 1rem;
+  }
+
+  .questions__button {
+    padding: 12px 48px;
+  }
+
+  .questions__notice {
+    padding-left: 0;
+  }
+
+  .offers__container {
+    max-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .offers__h1 {
+    font-size: 2.25rem;
+  }
+
+  .offers__h2 {
+    font-size: 1.25rem;
+  }
+
+  .offers__h3 {
+    font-size: 1.125rem;
+  }
+
+  .offers__text {
+    font-size: 1.125rem;
+  }
+
+  .offers__number {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+
+  .offers__objects {
+    padding-top: 25px;
+  }
+
+  .offers__content {
+    margin: 0;
+  }
+
+  .tablet-br__shown {
+    display: block;
   }
 }
