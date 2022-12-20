@@ -152,6 +152,11 @@ li {
   justify-content: space-between;
 }
 
+.header__tablet-logo {
+  width: 130px;
+  height: 44px;
+}
+
 .header__tablet-ring {
   display: flex;
   align-items: center;
@@ -178,15 +183,26 @@ li {
 
 .tablet-flag__img {
   margin-left: 10px;
+  width: 23px;
+  height: 12px;
 }
 
 .tablet-br__shown {
   display: none;
 }
 
+.mobile-br {
+  display: none;
+}
+
 .header {
   background-color: black;
   padding: 0;
+}
+
+.header__logo {
+  width: 130px;
+  height: 44px;
 }
 
 .header-buttons {
@@ -325,8 +341,10 @@ li {
 }
 
 .title-black__hr {
-  border-color: #F1DC9A;
+  background-color: #F1DC9A;
   width: 84px;
+  height: 1px;
+  border: 0;
   margin-top: 14px;
   margin-bottom: 20px;
 }
@@ -529,10 +547,12 @@ li {
 }
 
 .offers__hr {
-  border-color: #F1DC9A;
+  background-color: #F1DC9A;
   margin-top: 5px;
   margin-bottom: 0;
   padding: 0;
+  border: 0;
+  height: 1px;
 }
 
 .offers__objects {
@@ -602,13 +622,17 @@ li {
 }
 
 .footer__hr {
+  background-color: #F1DC9A;
   width: 60px;
-  border-color: #F1DC9A;
+  height: 1px;
+  border: 0;
   margin: 0;
 }
 
 .footer__hr-longer {
-  border-color: #F1DC9A;
+  background-color: #F1DC9A;
+  height: 1px;
+  border: 0;
 }
 
 .footer__info {
@@ -683,10 +707,6 @@ li {
     font-size: 1.125rem;
   }
 
-  .title-white {
-    background-position: bottom;
-  }
-
   .title-white__container {
     max-width: 768px;
   }
@@ -722,6 +742,7 @@ li {
 
   .title-white {
     background-image: url('/assets/img/slider-tablet.png');
+    background-position: bottom;
   }
 
   .title-white__logo {
@@ -802,4 +823,175 @@ li {
   .tablet-br__shown {
     display: block;
   }
+}
+
+@media (max-width: 767.98px) {
+  .header__tablet-container {
+    max-width: 360px;
+    padding: 10px;
+  }
+
+  .header__tablet-logo img {
+    width: 95px;
+    height: 40px;
+  }
+
+  .tablet__menu {
+    width: 25px;
+    height: 19px;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .shopping {
+    display: none;
+  }
+
+  .ring {
+    display: none;
+  }
+
+  .telephone {
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+  }
+
+  .tablet-flag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .header__tablet-flags {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tablet-flag span {
+    order: 1;
+  }
+
+  .tablet-flag__img {
+    order: 0;
+    padding-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .h1 {
+    font-size: 1.6875rem;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+  }
+
+  .h3 {
+    font-size: 0.9375rem;
+  }
+
+  .mobile-br {
+    display: block;
+  }
+
+  .desktop-br {
+    display: none;
+  }
+
+  .title-black {
+    background-image: url(*);
+    background-color: rgba(40, 40, 40, 1);
+  }
+
+  .title-black__hr {
+    width: 60px;
+  }
+
+  .title-black__piano {
+    width: 190px;
+    height: 156px;
+  }
+
+  .title-white__container {
+    max-width: 360px;
+    height: 382px;
+  }
+
+  .title-white {
+    background-image: url('/assets/img/slider-mobile.png');
+    background-size: 100% auto;
+    background-position: top;
+  }
+
+  .title-white__logo {
+    width: 135px;
+    height: 46px;
+    padding-left: 20px;
+    padding-bottom: 7px;
+    padding-top: 30px;
+  }
+
+  .title-white__text {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding-left: 20px;
+  }
+
+  .questions {
+    background-image: url('/assets/img/questions-mobile.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 1050px;
+  }
+
+  .questions__container {
+    max-width: 360px;
+    padding-top: 35px;
+    padding-left: 0;
+  }
+
+  .questions__image {
+    display: none;
+  }
+
+  .questions__h1 {
+    font-size: 1.625rem;
+    text-align: center;
+  }
+
+  .questions__h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .questions__h3 {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .questions__textareas {
+    padding-top: 20px;
+  }
+
+  .questions__textarea {
+    padding-top: 15px;
+  }
+
+  .questions__legend {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .questions__input {
+    width: 334px;
+    background: transparent;
+  }
+
+  .questions__button {
+    margin-top: 25px;
+  }
+
 }
