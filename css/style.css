@@ -455,10 +455,12 @@ li {
   letter-spacing: 0;
   padding-top: 10px;
   color: black;
+  text-align: start;
 }
 
 .questions__textarea {
   padding-left: 17px;
+  border: 0;
 }
 
 .questions__input {
@@ -549,7 +551,7 @@ li {
 .offers__hr {
   background-color: #F1DC9A;
   margin-top: 5px;
-  margin-bottom: 0;
+  margin-bottom: -10px;
   padding: 0;
   border: 0;
   height: 1px;
