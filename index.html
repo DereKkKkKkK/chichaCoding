@@ -30,43 +30,73 @@
             <input class="profile" type="image" src="assets/img/profile_icon_1.svg" alt="profile card">
             <div class="menu__content">
               <input class="tablet__menu" type="image" src="assets/img/Menu.png" alt="tablet menu">
-              <div class="menu__list">
-                <ul>
-                  <li>
-                    <a class="h4" href="">ОНЛАЙН-МАГАЗИН ПИАНИНО И РОЯЛЕЙ</a>
-                  </li>
-                  <li>
-                    <a class="h4" href="">НАСТРОЙКА ПИАНИНО И РОЯЛЕЙ</a>
-                  </li>
-                  <li>
-                    <a class="h4" href="">АРЕНДА ПИАНИНО И РОЯЛЕЙ</a>
-                  </li>
-                  <li>
-                    <a class="h4" href="">ДОПОЛНИТЕЛЬНЫЕ СИСТЕМЫ</a>
-                  </li>
-                  <li>
-                    <a class="h4" href="">НОВОСТНОЙ БЛОГ</a>
-                  </li>
-                  <li>
-                    <a class="h4" href="">О КОМПАНИИ</a>
-                  </li>
-                  <li>
-                    <a class="h4" href="">КОНТАКТЫ</a>
-                  </li>
-                </ul>
-              </div>
+
+              <ul class="menu__list">
+                <li>
+                  <a class="h4" href="">ОНЛАЙН-МАГАЗИН ПИАНИНО И РОЯЛЕЙ</a>
+                </li>
+                <li>
+                  <a class="h4" href="">НАСТРОЙКА ПИАНИНО И РОЯЛЕЙ</a>
+                </li>
+                <li>
+                  <a class="h4" href="">АРЕНДА ПИАНИНО И РОЯЛЕЙ</a>
+                </li>
+                <li>
+                  <a class="h4" href="">ДОПОЛНИТЕЛЬНЫЕ СИСТЕМЫ</a>
+                </li>
+                <li>
+                  <a class="h4" href="">НОВОСТНОЙ БЛОГ</a>
+                </li>
+                <li>
+                  <a class="h4" href="">О КОМПАНИИ</a>
+                </li>
+                <li>
+                  <a class="h4" href="">КОНТАКТЫ</a>
+                </li>
+                <li class="menu__item menu__mobile">
+                  <div>
+                    <button class="ring-mobile h4"> ЗАКАЗАТЬ ЗВОНОК </button>
+                    <div class="menu__mobile-inputs">
+                      <input class="shopping-mobile" type="image" src="assets/img/shopping_card_1.svg"
+                        alt="shopping card">
+                      <input class="profile-mobile" type="image" src="assets/img/profile_icon_1.svg" alt="profile card">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
             </div>
           </div>
         </div>
         <div class="header__tablet-flags">
-          <button class="tablet-flag"> <span> РУССКИЙ </span> <img class="tablet-flag__img"
-              src="assets/img/Russia_Flag.png" alt="russia-flag"> </button>
-          <button class="tablet-flag"> <span> ENGLISH </span> <img class="tablet-flag__img"
-              src="assets/img/USA_Flag.png" alt="usa-flag"> </button>
-          <button class="tablet-flag"> <span> O'ZBEK </span> <img class="tablet-flag__img"
-              src="assets/img/Izrael_Flag.png" alt="izrael-flag"> </button>
-          <button class="tablet-flag"> <span> AZƏRBAYCAN </span> <img class="tablet-flag__img"
-              src="assets/img/Kazah_Flag.png" alt="kazah-flag"> </button>
+          <button class="tablet-flag"> <span> РУССКИЙ </span>
+            <picture>
+              <source srcset="assets/img/Russia_Flag.avif" alt="russia-flag">
+              <source srcset="assets/img/Russia_Flag.wepb" alt="russia-flag">
+              <img class="tablet-flag__img" srcset="assets/img/Russia_Flag.png" alt="russia-flag">
+            </picture>
+          </button>
+          <button class="tablet-flag"> <span> ENGLISH </span>
+            <picture>
+              <source srcset="assets/img/USA_Flag.avif" alt="usa-flag">
+              <source srcset="assets/img/USA_Flag.webp" alt="usa-flag">
+              <img class="tablet-flag__img" srcset="assets/img/USA_Flag.png" alt="usa-flag">
+            </picture>
+          </button>
+          <button class="tablet-flag"> <span> O'ZBEK </span>
+            <picture>
+              <source srcset="assets/img/Izrael_Flag.avif" alt="izrael-flag">
+              <source srcset="assets/img/Izrael_Flag.webp" alt="izrael-flag">
+              <img class="tablet-flag__img" srcset="assets/img/Izrael_Flag.png" alt="izrael-flag">
+            </picture>
+          </button>
+          <button class="tablet-flag"> <span> AZƏRBAYCAN </span>
+            <picture>
+              <source srcset="assets/img/Kazah_Flag.avif" alt="kazah-flag">
+              <source srcset="assets/img/Kazah_Flag.webp" alt="kazah-flag">
+              <img class="tablet-flag__img" src="assets/img/Kazah_Flag.png" alt="kazah-flag">
+            </picture>
+          </button>
         </div>
       </div>
     </div>
@@ -103,13 +133,33 @@
       <div class="container">
         <div class="header-buttons">
           <div class="flags">
-            <button class="russia__flag flag"> <img src="assets/img/Russia_Flag.png" alt="russia flag">
+            <button class="russia__flag flag">
+              <picture>
+                <source srcset="assets/img/Russia_Flag.avif" alt="russia flag">
+                <source srcset="assets/img/Russia_Flag.webp" alt="russia flag">
+                <img srcset="assets/img/Russia_Flag.png" alt="russia flag">
+              </picture>
             </button>
-            <button class="usa__flag flag"> <img src="assets/img/USA_Flag.png" alt="usa flag">
+            <button class="usa__flag flag">
+              <picture>
+                <source srcset="assets/img/USA_Flag.avif" alt="usa flag">
+                <source srcset="assets/img/USA_Flag.webp" alt="usa flag">
+                <img srcset="assets/img/USA_Flag.png" alt="usa flag">
+              </picture>
             </button>
-            <button class="kazah__flag flag"> <img src="assets/img/Kazah_Flag.png" alt="kazah flag">
+            <button class="kazah__flag flag">
+              <picture>
+                <source srcset="assets/img/Kazah_Flag.avif" alt="kazah flag">
+                <source srcset="assets/img/Kazah_Flag.webp" alt="kazah flag">
+                <img srcset="assets/img/Kazah_Flag.png" alt="kazah flag">
+              </picture>
             </button>
-            <button class="izrael__flag flag"> <img src="assets/img/Izrael_Flag.png" alt="izrael flag">
+            <button class="izrael__flag flag">
+              <picture>
+                <source srcset="assets/img/Izrael_Flag.avif" alt="izrael flag">
+                <source srcset="assets/img/Izrael_Flag.webp" alt="izrael flag">
+                <img srcset="assets/img/Izrael_Flag.png" alt="izrael flag">
+              </picture>
             </button>
           </div>
           <div>
@@ -127,9 +177,13 @@
 
   <section class="title-black">
     <div class="title-black__container">
-      <img class="title-black__piano" src="assets/img/piano.png" alt="piano">
+      <picture>
+        <source srcset="assets/img/piano.avif" alt="piano">
+        <source srcset="assets/img/piano.webp" alt="piano">
+        <img class="title-black__piano" srcset="assets/img/piano.png" alt="piano">
+      </picture>
       <p class="h1">
-        ПИАНИНО И РОЯЛИ <br class="mobile-br"> С <br class="tablet-br"> МНОГОЛЕТНЕЙ <br class="mobile-br">
+        ПИАНИНО И РОЯЛИ <br class="mobile-br"> С <br class="desktop-br"> МНОГОЛЕТНЕЙ <br class="mobile-br">
         ИСТОРИЕЙ
       </p>
       <hr class="title-black__hr">
@@ -141,9 +195,13 @@
 
   <section class="title-white">
     <div class="title-white__container">
-      <img class="title-white__logo" src="assets/img/logo.png" alt="logo">
+      <picture>
+        <source srcset="assets/img/logo.avif" alt="logo">
+        <source srcset="assets/img/logo.webp" alt="logo">
+        <img class="title-white__logo" srcset="assets/img/logo.png" alt="logo">
+      </picture>
       <p class="title-white__text h2">
-        "РОМАНТИЧНЫЕ" ФОРТЕПИАНО <br class="desktop-br"> ОТ <br class="mobile-br"> ЧЕШСКИХ МАСТЕРОВ
+        "РОМАНТИЧНЫЕ" ФОРТЕПИАНО <br class="mobile-br"> ОТ <br class="mobile-br__shown"> ЧЕШСКИХ МАСТЕРОВ
       </p>
     </div>
   </section>
@@ -192,7 +250,11 @@
         </p>
       </div>
       <div class="questions__image">
-        <img src="/assets/img/piano2.png" alt="questions-piano">
+        <picture>
+          <source srcset="assets/img/piano2.avif" alt="questions-piano">
+          <source srcset="assets/img/piano2.webp" alt="questions-piano">
+          <img src="assets/img/piano2.jpg" alt="questions-piano">
+        </picture>
       </div>
     </div>
   </section>
@@ -201,100 +263,119 @@
     <div class="offers__container">
       <div class="offers__content">
         <p class="offers__h1">
-          ПРИОБРЕТИТЕ <br> <span class="offers__h2"> ИДЕАЛЬНОЕ ФОРТЕПИАНО ДЛЯ СВОИХ ЦЕЛЕЙ </span>
+          ПРИОБРЕТИТЕ <br> <span class="offers__h2"> ИДЕАЛЬНОЕ ФОРТЕПИАНО ДЛЯ <br class="mobile-br"> СВОИХ ЦЕЛЕЙ </span>
         </p>
         <div class="offers__objects">
           <div class="offers__object">
-            <span class="offers__number"> 01 </span> <br class="tablet-br"> <br> <span class="offers__h3">
-              Получите
-              подробную
-              <br>
-              консультацию <br class="tablet-br__shown"> экспертов
-            </span>
-            <hr class="offers__hr"> <br> <span class="offers__text"> Менеджеры <br class="tablet-br__shown">
-              подробно <br>
-              проконсультируют <br class="tablet-br__shown">
-              Вас по <br class="tablet-br"> всем <br class="tablet-br__shown">
-              вопросам и <br class="tablet-br__shown"> подскажут <br>
-              оптимальный <br class="tablet-br__shown"> вариант,
-              исходя <br class="tablet-br"> из <br class="tablet-br__shown"> Ваших пожеланий. </span>
+            <div class="div-mobile">
+              <span class="offers__number"> 01 </span>
+            </div> <br class="tablet-br"> <br class="mobile-br__hidden">
+            <div class="div-mobile"> <span class="offers__h3">
+                Получите
+                подробную
+                <br>
+                консультацию <br class="tablet-br"> экспертов
+              </span>
+              <hr class="offers__hr"> <br> <span class="offers__text"> Менеджеры <br class="tablet-br">
+                подробно <br>
+                проконсультируют <br class="tablet-br">
+                Вас по <br class="desktop-br"> всем <br class="mobile-br tablet-br">
+                вопросам и <br class="tablet-br"> подскажут <br class="mobile-br__hidden">
+                оптимальный <br class="tablet-br"> вариант,
+                исходя <br class="desktop-br"> из <br class="tablet-br"> Ваших пожеланий.
+              </span>
+            </div>
           </div>
           <div class="offers__object">
-            <span class="offers__number"> 02 </span> <br class="tablet-br"> <br> <span class="offers__h3">
-              Выберите одну
-              из
-              более <br class="tablet-br__shown">
-              чем <br class="tablet-br"> 180-и моделей <br class="tablet-br__shown"> фортепиано
-            </span>
-            <hr class="offers__hr"> <br> <span class="offers__text"> Широкий выбор <br class="tablet-br__shown"> пианино
-              и
-              <br class="tablet-br">
-              роялей на <br class="tablet-br__shown"> любой вкус и к <br class="tablet-br"> любому <br
-                class="tablet-br__shown"> интерьеру. Начиная от <br class="tablet-br__shown">
-              <br class="tablet-br"> барокко и заканчивая <br class="tablet-br__shown">
-              <br class="tablet-br">
-              модерном.
-              <br>
-              <br>
-              Большой выбор цветов <br class="tablet-br__shown"> и <br class="tablet-br"> отделок.
-              <br>
-              <br>
-              Возможность заказать <br class="tablet-br__shown"> пианино <br class="tablet-br"> с
-              <br class="tablet-br__shown"> собственным <span class="offers__span"> <br class="tablet-br__shown">
-                уникальным </span> <br class="tablet-br"> цветом/
-              <br class="tablet-br__shown"> отделкой.
-
-            </span>
+            <div class="div-mobile">
+              <span class="offers__number"> 02 </span>
+            </div> <br class="tablet-br"> <br class="mobile-br__hidden">
+            <div class="div-mobile"> <span class="offers__h3">
+                Выберите одну
+                из
+                более <br class="tablet-br">
+                чем <br class="desktop-br"> 180-и моделей <br class="tablet-br"> фортепиано
+              </span>
+              <hr class="offers__hr"> <br> <span class="offers__text"> Широкий выбор <br class="tablet-br">
+                пианино
+                и
+                <br class="desktop-br">
+                роялей на <br class="tablet-br"> любой вкус и к <br class="desktop-br"> любому <br class="tablet-br">
+                интерьеру. <br class="mobile-br"> Начиная от <br class="desktop-br">
+                <br class="tablet-br"> барокко и заканчивая
+                <br>
+                модерном.
+                <br>
+                <br>
+                Большой выбор цветов <br class="tablet-br"> и <br class="desktop-br"> отделок.
+                <br>
+                <br>
+                Возможность заказать <br class="tablet-br"> пианино <br class="desktop-br"> с
+                <br class="tablet-br"> собственным <span class="offers__span"> <br class="tablet-br">
+                  уникальным </span> <br class="mobile-br__hidden"> цветом/
+                <br class="tablet-br"> отделкой.
+              </span>
+            </div>
           </div>
           <div class="offers__object">
-            <span class="offers__number"> 03 </span> <br class="tablet-br"> <br> <span class="offers__h3">
-              Оплатите любым
-              <br class="tablet-br__shown">
-              удобным
-              <br class="tablet-br">
-              для Вас <br class="tablet-br__shown"> способом </span>
-            <hr class="offers__hr"> <span class="offers__text"> <br>
-              - наличными в наших <br class="tablet-br__shown"> салонах <br class="tablet-br"> (Алматы
-              и <br class="tablet-br__shown"> Нур-Султан)
-              <br>
-              <br>
-              - картой VISA/ <br class="tablet-br__shown"> MasterCard
+            <div class="div-mobile">
+              <span class="offers__number"> 03 </span>
+            </div> <br class="tablet-br"> <br class="mobile-br__hidden">
+            <div class="div-mobile"> <span class="offers__h3">
+                Оплатите любым
+                <br class="tablet-br">
+                удобным
+                <br class="desktop-br">
+                для <br class="mobile-br"> Вас <br class="tablet-br"> способом </span>
+              <hr class="offers__hr"> <span class="offers__text"> <br>
+                - наличными в наших <br class="tablet-br"> салонах <br class="mobile-br__hidden"> (Алматы
+                и <br class="tablet-br"> Нур-Султан)
+                <br>
+                <br>
+                - картой VISA/ <br class="tablet-br"> MasterCard
 
-              <br>
-              <br>
-              - через Kaspi QR/ <br class="tablet-br__shown"> удаленная <br class="tablet-br">
-              оплата
+                <br>
+                <br>
+                - через Kaspi QR/ <br class="tablet-br"> удаленная <br class="desktop-br">
+                оплата
 
-              <br>
-              <br>
-              - безналичная <br class="tablet-br__shown"> оплата через <br class="tablet-br"> банк
-              <br class="tablet-br__shown"> для юридических и
-              <br> физических лиц
-            </span>
+                <br>
+                <br>
+                - безналичная <br class="tablet-br"> оплата через <br class="desktop-br"> банк
+                <br class="tablet-br"> для юридических и
+                <br class="mobile-br__shown"> физических лиц
+              </span>
+            </div>
           </div>
           <div class="offers__object">
-            <span class="offers__number"> 04 </span> <br class="tablet-br"> <br> <span class="offers__h3">
-              Мы произведем <br class="tablet-br__shown">
-              установку
-              <br class="tablet-br">
-              фортепиано <br class="tablet-br__shown"> “под ключ” </span>
-            <hr class="offers__hr"> <span class="offers__text"> <br> - доставка по Алматы и <br> Нур-Султану
-              (отдельно: <br class="tablet-br__shown"> по
-              всем <br class="tablet-br"> регионам <br class="tablet-br__shown"> Казахстана)
-              <br>
-              <br>
-              - правильная установка <br> инструмента на месте
+            <div class="div-mobile">
+              <span class="offers__number"> 04 </span>
+            </div> <br class="tablet-br"> <br class="mobile-br__hidden">
+            <div class="div-mobile"> <span class="offers__h3">
+                Мы произведем <br class="tablet-br">
+                установку
+                <br class="mobile-br__hidden">
+                фортепиано <br class="tablet-br"> “под ключ” </span>
+              <hr class="offers__hr"> <span class="offers__text"> <br> - доставка по Алматы и <br
+                  class="mobile-br__shown"> Нур-Султану <br class="mobile-br">
+                (отдельно: <br class="tablet-br"> по
+                всем <br class="desktop-br"> регионам <br class="tablet-br mobile-br"> Казахстана)
+                <br>
+                <br>
+                - правильная установка <br class="mobile-br__shown"> инструмента <br class="mobile-br"> на месте
 
-              <br>
-              <br>
-              - первичная настройка <br> инструмента после <br class="tablet-br__shown"> установки
+                <br>
+                <br>
+                - первичная настройка <br class="mobile-br__shown"> инструмента <br class="mobile-br"> после <br
+                  class="tablet-br"> установки
 
-              <br>
-              <br>
-              - опционально: полное <br class="tablet-br__shown"> <span class="offers__span">
-                сервисное <br> обслуживание </span> <br class="tablet-br__shown">
-              инструмента
-            </span>
+                <br>
+                <br>
+                - опционально: полное <br class="tablet-br"> <span class="offers__span">
+                  сервисное <br> обслуживание </span> <br class="tablet-br">
+                инструмента
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -305,10 +386,12 @@
     <div class="footer__container">
       <div class="footer__content">
         <p class="footer__h1">
-          КОНТАКТЫ </p> <br> <span class="footer__h2">
+          КОНТАКТЫ </p> <br class="mobile-br__shown"> <span class="footer__h2">
           Алматы &nbsp; &nbsp; Нур-Султан (Астана) </span> <br>
         <hr class="footer__hr">
-        <br> <span class="footer__info"> Салон "PIANOS", 2-ой этаж ТРЦ "Esentai Mall" на <br> Аль-Фараби 77/8
+        <br> <span class="footer__info"> Салон "PIANOS", 2-ой этаж ТРЦ <br class="mobile-br"> "Esentai Mall" на <br
+            class="mobile-br__shown">
+          Аль-Фараби 77/8
         </span>
         <hr class="footer__hr-longer">
         <span class="footer__tel"> <br> + 7 727 317 95 07 <br> + 7 708 107 85 07 <br> + 7 700 107 85 07 </span>
@@ -320,11 +403,16 @@
           <br> <span class="footer__info footer__span"> Работаем в Казахстане, Азербайджане и Узбекистане
           </span>
         </p>
-        <span class="footer__info"> info@pianos.kz </span>
-        <br> <button class="footer__dot"></button> &nbsp; <button class="footer__dot"></button>
+        <span class="footer__info footer__mobile-hidden"> info@pianos.kz </span>
+        <br class="mobile-br__shown"> <button class="footer__dot"></button> &nbsp; <button class="footer__dot"></button>
         &nbsp; <button class="footer__dot"></button>
+        <span class="footer__info footer__mobile-shown"> info@pianos.kz </span>
       </div>
     </div>
+  </footer>
+
+  <footer class="footer__mobile">
+
   </footer>
   <span class="footer__end"> © 2010-2021 PIANOS ПИАНИНО И РОЯЛИ </span>
 </body>
